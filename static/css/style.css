@@ -1,0 +1,89 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    box-sizing:border-box;
+    background-color:rgb(58,72,86);
+}
+
+
+
+header {
+    text-align:center;
+    color:rgb(172,255,244);
+    font-size:5vh;
+    text-decoration-line:underline;
+}
+
+.upper {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    top:11vh;
+    width:40vh;
+    height:2vh;
+    background-color:rgb(0,200,240);
+    border-radius:10px;
+}
+
+.lower {
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:2vh;
+    height:40vh;
+    background-color:rgb(0,200,240);
+    border-radius:10px;
+}
+
+.bible_versicle{
+    color:#ffffff;
+    font-size: 6vh;
+    text-align:center;
+    margin-top:5vh;
+}
+
+.contexto_btn{
+    display:flex;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1rem;
+    color:#ffffff;
+    background-color:rgb(0,200,240);
+    border:none;
+    padding:1vh;
+    border-radius:1vh;
+    font-size:3vh;
+}
+
+.msg_biblica {
+	opacity:1;
+	animation-name:span_anim;
+	animation-duration: 1s;
+	aimation-timing-function:ease-in;
+}
+
+.contexto_btn:active{
+  animation-name: btn_colorAnim;
+  animation-duration: 0.3s;
+  animation-timing-function:ease-in;
+}
+
+@keyframes btn_colorAnim {
+    0% {
+        margin-top:1rem;
+    }
+    100%{
+        margin-top:1.3rem;
+    }
+}
+
+@keyframes span_anim {
+	0% {
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+
+}
