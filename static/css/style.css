@@ -3,7 +3,12 @@
     padding:0;
     text-decoration:none;
     box-sizing:border-box;
-    background-color:rgb(58,72,86);
+}
+
+body{
+
+	background-color:rgb(58,72,86);
+
 }
 
 
@@ -85,5 +90,42 @@ header {
 	100%{
 		opacity:1;
 	}
+}
 
+@media screen and (max-width: 480px){
+	#msg{
+		position:relative;
+		top:10vh;
+		padding:2vh;
+		font-size:1rem;
+		line-height:1;
+		word-wrap:break-word;
+	}
+	
+	.contexto_btn{
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:9rem;
+		font-size:1.5rem;
+		padding-left:1rem;
+		padding-right:1rem;
+		border-radius:1rem;
+	}
+	
+	
+	.lower{
+		display:none;
+	}
+	
+	.upper{
+		display:none;
+	}
+	
+	.msg_biblica {
+	opacity:1;
+	animation-name:span_anim;
+	animation-duration: 6s;
+	aimation-timing-function:ease-in;
+	}
+	
 }
